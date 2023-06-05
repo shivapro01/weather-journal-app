@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Weather Journal</title>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Journal App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Weather Journal App</h1>
+  </header>
+  <main>
+    <div class="form-container">
+      <label for="zip">Enter Zip Code:</label>
+      <input type="text" id="zip" placeholder="Enter zip code here">
+
+      <label for="feelings">How do you feel today?</label>
+      <textarea id="feelings" rows="3"></textarea>
+
+      <button id="generate">Generate</button>
+    </div>
+
+    <div class="result-container">
+      <h2>Latest Entry:</h2>
+      <div class="entry">
+        <div class="result-item">
+          <h3>Date:</h3>
+          <p id="date"></p>
+        </div>
+        <div class="result-item">
+          <h3>Temperature:</h3>
+          <p id="temp"></p>
+        </div>
+        <div class="result-item">
+          <h3>Feelings:</h3>
+          <p id="content"></p>
+        </div>
+        <div class="result-item">
+          <h3>Weather:</h3>
+          <img id="weather-icon" src="./weather.jpeg" alt="Weather Icon" width="50px" height="50px">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
